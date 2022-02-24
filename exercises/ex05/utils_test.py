@@ -2,8 +2,7 @@
 
 __author__ = "730480432"
 
-from utils import only_evens, sub 
-# , concat
+from utils import only_evens, sub, concat
 
 
 def test_only_evens_positive() -> None:
@@ -22,16 +21,31 @@ def test_only_evens_negative() -> None:
 
 
 def test_sub_positive() -> None:
-    """Testing to find a subset in postive numbers"""
+    """Testing to find a subset in postive numbers."""
 
     assert sub([1, 2, 3, 4], 1, 3) == [2, 3] 
 
 
 def test_sub_empty() -> None:
-    """Testing to find a subset in postive numbers"""
+    """Testing to find a subset in no numbers."""
     assert sub([], 1, 2) == []
 
 
 def test_sub_negative() -> None:
-    """Testing to find a subset in postive numbers"""
+    """Testing to find a subset in negative numbers."""
     assert sub([-1, -2, -3, -4], 1, 3) == [-2, -3]
+
+
+def test_concat_positive() -> None:
+    """Testing to find list in postive numbers."""
+    assert concat
+
+
+def test_concat_empty() -> None:
+    """Testing to find list in no numbers."""
+    assert concat
+
+
+def test_concat_negative() -> None:
+    """Testing to find list in negative numbers."""
+    assert concat
