@@ -9,7 +9,7 @@ YELLOW_BOX: str = "\U0001F7E8"
 
 def main() -> None:
     """The entrypoint of the program and main game loop."""
-    codes: str = "car"
+    codes: str = "marvelous"
     first: str = ""
     i: int = 1
     exp_length: int = len(codes)
