@@ -17,23 +17,25 @@ def test_only_evens_empty() -> None:
 
 def test_only_evens_negative() -> None:
     """Testing to find only negative even numbers."""
-    assert only_evens([-1, -2, -3, -4, -5, -6, -7, -8, -9, -10]) == [-2, -4, -6, -8, -10]
+    assert only_evens([0, -2, -3, -4, -5, -6, -7, -8, -9, -10]) == [-2, -4, -6, -8, -10]
 
 
 def test_sub_positive() -> None:
     """Testing to find a subset in postive numbers."""
-
-    assert sub([1, 2, 3, 4], 1, 3) == [2, 3] 
+    a_list = [1, 2, 3, 4, 5]
+    assert sub(a_list, 1, 3) == [2, 3] 
 
 
 def test_sub_empty() -> None:
     """Testing to find a subset in no numbers."""
-    assert sub([], 1, 2) == []
+    a_list = []
+    assert sub(a_list, 1, 2) == []
 
 
 def test_sub_negative() -> None:
     """Testing to find a subset in negative numbers."""
-    assert sub([-1, -2, -3, -4], 1, 3) == [-2, -3]
+    a_list = [-1, -2, -3, -4, -5]
+    assert sub(a_list, 1, 3) == [-2, -3]
 
 
 def test_concat_positive() -> None:
